@@ -12,7 +12,6 @@
   backdrop-filter: blur(2px);
   display: grid;
   place-content: center;
-  transition: transform 150ms ease;
 }
 
 .delete {
