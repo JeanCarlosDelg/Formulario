@@ -10,6 +10,7 @@ const UserDelete = ({ deleteIsClose, setDeleteIsClose, deleteUsers, userId }) =>
   const handleOpenDeleteCancel = () => {
     setDeleteIsClose(true)
   }
+  
 
   return (
     <div className={`delete__container ${deleteIsClose && 'delete__close'}`}>
