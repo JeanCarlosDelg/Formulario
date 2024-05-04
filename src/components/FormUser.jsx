@@ -31,7 +31,7 @@ const FormUser = ({ createUsers, userDate, upDateUsers, setUserDate, formIsClose
     })
   }
 
-  const handleFormClose = () => {
+  const handleFormClose = () => {   
     setFormIsClose(true)
     reset({
       email: '',

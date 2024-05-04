@@ -28,7 +28,7 @@ const useCrud = (BASEURL) => {
 
   const upDateApi = (path, id, data) => {
     const url = `${BASEURL}${path}${id}/`
-    axios.patch(url, data)
+    axios.put(url, data)
       .then(res => setResponse(response.map(e => e.id === id ? res.data : e)))
       .catch(err => console.log(err))
   }

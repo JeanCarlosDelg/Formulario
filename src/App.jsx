@@ -18,14 +18,13 @@ function App() {
   const [upDateClose, setUpDateClose] = useState(true)
   const [userId, setUserId] = useState()
 
-  const BASEURL = 'https://users-crud.academlo.tech'
+  const BASEURL = 'https://user-crud-etbm.onrender.com'  //'https://users-crud.academlo.tech'
   const [users, getUsers, createUsers, deleteUsers, upDateUsers] = useCrud(BASEURL)
 
   useEffect(() => {
     getUsers('/users/')
   }, [])
 
-  // console.log(users)
   const handleOpenForm = () => {
     setFormIsClose(false)
   }
